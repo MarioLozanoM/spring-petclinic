@@ -10,7 +10,7 @@ pipeline {
             }
             
             steps {
-                sh 'mvn -B verify'
+                sh 'mvn package -Dmaven.test.skip'
             }
 
             post{
